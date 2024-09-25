@@ -1,6 +1,7 @@
-import { Aside } from './components/Aside';
+import { Aside } from '../components/Aside' 
 import './globals.css'
 import { Prompt } from 'next/font/google'
+
 
 export const metadata = {
   title: "Cold connect",
@@ -13,15 +14,20 @@ const prompt = Prompt({
   display: 'swap',
 })
 
+
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br" className={prompt.className}>
       <body>
         <div className='app-container'>
-          <Aside />
-          {children}
-        </div>        
+          <div>
+            <Aside />
+          </div>
+          <div className='main-content'>
+            {children}
+          </div>
+        </div>
       </body>
     </html>
-  );
+  )
 }

@@ -27,7 +27,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "src/app/components/Aside/index.jsx", "src/app/components/Avatar/index.jsx", "src/app/components/CardPost/index.jsx"  ],
+, "src/components/Aside/index.jsx", "src/components/Avatar/index.jsx", "src/components/CardPost/index.jsx"  ],
   "exclude": [
     "node_modules"
   ]
